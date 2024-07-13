@@ -1,0 +1,21 @@
+<section class="experience-section">
+  <h2>Experiencia Profesional</h2>
+  <div class="grid-container">
+    <ng-container *ngFor="let job of jobs">
+      <div class="job-card">
+        <h3>{{ job.title }}</h3>
+        <h4>{{ job.location }}</h4>
+        <p>
+          <strong>Proyecto: {{ job.project }}</strong>
+        </p>
+        <p>
+          <strong>Tecnologías utilizadas Frontend:</strong> {{ job.frontend }}
+        </p>
+        <p>
+          <strong>Tecnologías utilizadas Backend:</strong> {{ job.backend }}
+        </p>
+        <p><strong>Otras Tecnologías:</strong> {{ job.other }}</p>
+      </div>
+    </ng-container>
+  </div>
+</section>

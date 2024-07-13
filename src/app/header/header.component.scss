@@ -1,0 +1,152 @@
+.header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background 0.5s ease;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+
+    .loader {
+      width: 30px;
+      height: 30px;
+      aspect-ratio: 1;
+      display: flex;
+      --c1: linear-gradient(#554236 0 0);
+      --c2: linear-gradient(#F77825 0 0);
+      --s: calc(100% / 3) calc(100% / 3);
+      background:
+        var(--c1) 0 0, var(--c2) 50% 0, var(--c1) 100% 0,
+        var(--c2) 0 50%, var(--c2) 100% 50%,
+        var(--c1) 0 100%, var(--c2) 50% 100%, var(--c1) 100% 100%;
+      background-repeat: no-repeat;
+      animation: l8-0 1.5s infinite alternate;
+    }
+
+    .loader:before {
+      content: "";
+      width: calc(100% / 3);
+      height: calc(100% / 3);
+      background: #60B99A;
+      animation: inherit;
+      animation-delay: 0s;
+      animation-name: l8-1;
+    }
+
+    @keyframes l8-0 {
+      0%, 12.49% { background-size: var(--s), 0 0, 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
+      12.5%, 24.9% { background-size: var(--s), var(--s), 0 0, 0 0, 0 0, 0 0, 0 0, 0 0; }
+      25%, 37.4% { background-size: var(--s), var(--s), var(--s), 0 0, 0 0, 0 0, 0 0, 0 0; }
+      37.5%, 49.9% { background-size: var(--s), var(--s), var(--s), 0 0, var(--s), 0 0, 0 0, 0 0; }
+      50%, 61.4% { background-size: var(--s), var(--s), var(--s), 0 0, var(--s), 0 0, 0 0, var(--s); }
+      62.5%, 74.9% { background-size: var(--s), var(--s), var(--s), 0 0, var(--s), 0 0, var(--s), var(--s); }
+      75%, 86.4% { background-size: var(--s), var(--s), var(--s), 0 0, var(--s), var(--s), var(--s), var(--s); }
+      87.5%, 100% { background-size: var(--s), var(--s), var(--s), var(--s), var(--s), var(--s), var(--s), var(--s); }
+    }
+
+    @keyframes l8-1 {
+      0%, 5% { transform: translate(0, 0); }
+      12.5% { transform: translate(100%, 0); }
+      25% { transform: translate(200%, 0); }
+      37.5% { transform: translate(200%, 100%); }
+      50% { transform: translate(200%, 200%); }
+      62.5% { transform: translate(100%, 200%); }
+      75% { transform: translate(0, 200%); }
+      87.5% { transform: translate(0, 100%); }
+      95%, 100% { transform: translate(100%, 100%); }
+    }
+
+    .name-and-email {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0.5rem;
+
+      .name {
+        font-size: 1.2rem;
+      }
+
+      .email {
+        display: flex;
+        align-items: center;
+        font-size: 0.8rem;
+        color: #aaa;
+
+        .copy-icon {
+          background: none;
+          border: none;
+          cursor: pointer;
+          margin-left: 0.5rem;
+          padding: 0;
+
+          img {
+            width: 12px; /* Ajusta el tamaño según sea necesario */
+            height: 12px; /* Ajusta el tamaño según sea necesario */
+            transition: opacity 0.3s ease;
+
+            &:hover {
+              opacity: 0.7; /* Cambia la opacidad al pasar el mouse */
+            }
+          }
+        }
+      }
+    }
+
+    .nav-link {
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+
+      svg {
+        fill: #fff;
+        transition: fill 0.3s ease;
+
+        &:hover {
+          fill: #0077b5; /* Color azul de LinkedIn */
+        }
+      }
+    }
+  }
+
+  .nav-links {
+    display: flex;
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      svg {
+        fill: #fff;
+        transition: fill 0.3s ease;
+
+        &:hover {
+          fill: #000; /* Color negro de GitHub */
+        }
+      }
+    }
+  }
+
+  &:hover {
+    background: #555;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "editor.formatOnSave": true, // Formats the code when you save the file
+  "prettier.singleQuote": true, // Use single quotes instead of double quotes where possible
+  "prettier.semi": true, // Add a semicolon at the end of statements
+  "prettier.trailingComma": "all", // Add trailing commas where valid in ES5 (objects, arrays, etc.)
+  "prettier.printWidth": 80, // Wrap lines exceeding 80 characters
+  "prettier.tabWidth": 2, // Set the number of spaces per indentation-level
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for TypeScript files
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for HTML files
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier as the default formatter for SCSS files
+  }
+}

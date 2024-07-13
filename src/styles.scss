@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* styles.scss o global-styles.scss */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-top: 80px; /* Ajusta este valor según la altura del header */
+}

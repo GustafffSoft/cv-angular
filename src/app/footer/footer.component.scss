@@ -1,0 +1,17 @@
+.footer {
+  text-align: center;
+  padding: 0.5rem;
+  background: #333;
+  color: #fff;
+  transition: background 0.5s ease, bottom 0.3s ease;
+  position: fixed;
+  width: 100%;
+  bottom: -100px; /* Oculto por defecto */
+  font-size: 0.8rem;
+  left: 0; /* Asegura que el footer esté alineado a la izquierda */
+  box-sizing: border-box; /* Incluye padding y borde en el tamaño total del elemento */
+
+  &:hover {
+    background: #555;
+  }
+}
