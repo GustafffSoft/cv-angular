@@ -7,6 +7,8 @@ import { ExperienceSectionModule } from './experience-section/experience-section
 import { EducationSectionModule } from './education-section/education-section.module';
 import { SkillsSectionModule } from './skills-section/skills-section.module';
 import { FooterModule } from './footer/footer.module';
+import { ChatbotComponent } from './chatbot/chatbot.component';
+import { ChatbotModule } from './chatbot/chatbot.module';
 // import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
@@ -19,9 +21,11 @@ import { FooterModule } from './footer/footer.module';
     ExperienceSectionModule,
     EducationSectionModule,
     SkillsSectionModule,
-    FooterModule],
+    FooterModule,
+    ChatbotModule,
+  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'my-cv';

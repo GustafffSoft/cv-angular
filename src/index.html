@@ -1,13 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>MyCv</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your App</title>
+    <script type="module">
+      import Chatbot from 'https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js';
+      document.addEventListener('DOMContentLoaded', () => {
+        Chatbot.init({
+          chatflowid: '53dfa09a-c47d-4c32-b239-96bf421a03b4',
+          apiHost: 'https://gustafff-toma10.hf.space',
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <app-root></app-root>
+  </body>
 </html>

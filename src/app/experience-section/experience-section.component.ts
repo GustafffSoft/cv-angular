@@ -70,7 +70,7 @@ export class ExperienceSectionComponent implements OnInit {
       project: 'CRM',
       frontend: 'JavaScript, XML, QWeb, OWL (Odoo Web Library)',
       backend: 'Odoo 8, Odoo 9, Odoo 11, Python 2.7, Python 3.5',
-      other: ''
+      other: 'PostgreSQL,Git'
     }
   ];
 
